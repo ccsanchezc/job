@@ -10,7 +10,7 @@ gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '~> 2.7'
+ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -39,6 +39,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'bulma-rails'
 gem 'sidekiq'
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick', '~> 4.8'
+#gem 'stripe', '~> 3.11'
+gem 'trix' 
 group :development, :test do
   gem 'better_errors'
   gem 'guard'

@@ -67,6 +67,10 @@ GEM
     bulma-rails (0.8.0)
       sassc (~> 2.0)
     byebug (11.0.1)
+    carrierwave (1.3.1)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
     coderay (1.1.2)
     concurrent-ruby (1.1.5)
     connection_pool (2.2.2)
@@ -104,6 +108,8 @@ GEM
     http_parser.rb (0.6.0)
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
+    jbuilder (2.9.1)
+      activesupport (>= 4.2.0)
     listen (3.2.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -116,7 +122,11 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (0.9.2)
+    mime-types (3.3)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2019.1009)
     mimemagic (0.3.3)
+    mini_magick (4.9.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.13.0)
@@ -191,6 +201,8 @@ GEM
     sqlite3 (1.4.1)
     thor (0.20.3)
     thread_safe (0.3.6)
+    trix (0.10.1)
+      rails
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     tzinfo-data (1.2019.3)
@@ -210,13 +222,17 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   bulma-rails
   byebug
+  carrierwave (~> 1.0)
   devise
   guard
   guard-livereload
+  jbuilder (~> 2.7)
+  mini_magick (~> 4.8)
   puma (~> 3.11)
   rails (~> 6.0.0)
   sidekiq
   sqlite3 (~> 1.4)
+  trix
   tzinfo-data
 
 RUBY VERSION
