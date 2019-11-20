@@ -5,11 +5,15 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    render json:  @posts
   end
-
+  def currency_list
+    @currency_list = Post.order(:id)
+  end
   # GET /posts/1
   # GET /posts/1.json
   def show
+    render json: {data: Post.find(params[:id])}
   end
 
   # POST /posts
